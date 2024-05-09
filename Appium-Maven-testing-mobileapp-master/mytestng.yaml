@@ -1,0 +1,9 @@
+name: MySuite
+configFailurePolicy: skip
+listeners:
+  - ExtentReportListener
+tests:
+  - name: MyTest
+  classes:
+    - WebGoat8Api
+

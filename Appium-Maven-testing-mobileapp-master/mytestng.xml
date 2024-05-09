@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuite">
+    <listeners>
+        <listener class-name="Utils.ExtentReportListener" />
+    </listeners>
+    <test name="MyTest">
+        <classes>
+        <class name="tests.AnderoidAppium" />
+        <class name="tests.WebGoat8Api" />
+        </classes>
+    </test>
+</suite>
