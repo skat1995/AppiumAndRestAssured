@@ -18,7 +18,7 @@ public class WebGoat8Api {
 	private String baseUrl = "http://localhost:8080";
 	private String loginEndpoint = "/WebGoat/login";
 	private String sqlInjectionEndpoint = "/WebGoat/SqlInjection/attack8";
-	private static String jsessionId = "vXRqcdOj23T1ReBF9B3ZWFzrZuBMQ4oWSjpNtcDA";
+	private static String jsessionId = "nLJ7iRd1p_qFiHJKvRyxP_ReuDilKkW1veEUN3tN";
 
 	@BeforeTest
 	public void setup() {
@@ -27,8 +27,8 @@ public class WebGoat8Api {
 
 	@Test(priority = 1, enabled = true)
 	public void testLoginAndGetSessionId() {
-		String username = "shivamkathayat";
-		String password = "1234567";
+		String username = "skat556";
+		String password = "qwerty";
 
 		// Send login request with logging
 		Response loginResponse = given().log().all() // Log request and response
@@ -84,7 +84,7 @@ public class WebGoat8Api {
 	public void testSqlInjectionWronInput() {
 		// Send SQL injection request with logging
 		given().log().all() // Log request and response
-				.cookie("JSESSIONID", "xxxx").header("Content-Type", "application/x-www-form-urlencoded")
+				.cookie("JSESSIONID", jsessionId).header("Content-Type", "application/x-www-form-urlencoded")
 				.body("name=A&auth_tan=invalid") // Send the
 													// payload
 													// as

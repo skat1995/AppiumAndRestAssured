@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.BaseClass">
+      <class name="tests.WebGoat8Api">
         <methods>
-          <include name="teardown"/>
           <include name="setup"/>
-          <include name="sampleTest"/>
+          <include name="testSqlInjectionWronInput"/>
+          <include name="testSuccessfulSqlInjection"/>
+          <include name="testSuccessfulSqlInjectionEmptyName"/>
         </methods>
-      </class> <!-- tests.BaseClass -->
+      </class> <!-- tests.WebGoat8Api -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

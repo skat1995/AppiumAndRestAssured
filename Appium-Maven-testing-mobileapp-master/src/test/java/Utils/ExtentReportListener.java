@@ -65,12 +65,12 @@ public class ExtentReportListener implements ITestListener {
         logger.info("Test passed: " + result.getMethod().getDescription());
         test.log(Status.PASS, "Test Passed");
         
-        try {
-	        String screenshotPath = Utilities.takeScreenshot(driver, result.getMethod().getDescription(), test);
-	    } catch (Exception e) {
-	        logger.error("Exception occurred: " + e.getMessage());
-	        Assert.fail("Test failed: " + e.getMessage());
-	    }
+//        try {
+//	        String screenshotPath = Utilities.takeScreenshot(driver, result.getMethod().getDescription(), test);
+//	    } catch (Exception e) {
+//	        logger.error("Exception occurred: " + e.getMessage());
+//	        Assert.fail("Test failed: " + e.getMessage());
+//	    }
     }
 
     public void onTestFailure(ITestResult result) {
