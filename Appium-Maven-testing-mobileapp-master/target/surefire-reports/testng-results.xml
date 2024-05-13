@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-13T17:05:40 IST" name="MySuite" finished-at="2024-05-13T17:06:29 IST" duration-ms="49636">
+    <groups>
+    </groups>
+    <test started-at="2024-05-13T17:05:40 IST" name="MyTest" finished-at="2024-05-13T17:06:29 IST" duration-ms="49636">
+      <class name="tests.AnderoidAppium">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AnderoidAppium@31920ade]" started-at="2024-05-13T17:05:40 IST" name="setup" finished-at="2024-05-13T17:05:57 IST" duration-ms="16795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="myAnderoidInstagramLaunchTest()[pri:0, instance:tests.AnderoidAppium@31920ade]" started-at="2024-05-13T17:05:57 IST" name="myAnderoidInstagramLaunchTest" finished-at="2024-05-13T17:06:26 IST" duration-ms="28162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myAnderoidInstagramLaunchTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AnderoidAppium@31920ade]" started-at="2024-05-13T17:06:28 IST" name="teardown" finished-at="2024-05-13T17:06:29 IST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AnderoidAppium -->
+      <class name="tests.WebGoat8Api">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.WebGoat8Api@2609b277]" started-at="2024-05-13T17:05:57 IST" name="setup" finished-at="2024-05-13T17:05:57 IST" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginAndGetSessionId()[pri:1, instance:tests.WebGoat8Api@2609b277]" started-at="2024-05-13T17:06:26 IST" name="testLoginAndGetSessionId" finished-at="2024-05-13T17:06:27 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndGetSessionId -->
+        <test-method signature="testSuccessfulSqlInjection()[pri:2, instance:tests.WebGoat8Api@2609b277]" started-at="2024-05-13T17:06:27 IST" name="testSuccessfulSqlInjection" finished-at="2024-05-13T17:06:28 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulSqlInjection -->
+        <test-method signature="testSuccessfulSqlInjectionEmptyName()[pri:3, instance:tests.WebGoat8Api@2609b277]" started-at="2024-05-13T17:06:28 IST" name="testSuccessfulSqlInjectionEmptyName" finished-at="2024-05-13T17:06:28 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulSqlInjectionEmptyName -->
+        <test-method signature="testSqlInjectionWronInput()[pri:4, instance:tests.WebGoat8Api@2609b277]" started-at="2024-05-13T17:06:28 IST" name="testSqlInjectionWronInput" finished-at="2024-05-13T17:06:28 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSqlInjectionWronInput -->
+      </class> <!-- tests.WebGoat8Api -->
+    </test> <!-- MyTest -->
+  </suite> <!-- MySuite -->
+</testng-results>

