@@ -18,7 +18,7 @@ public class WebGoat8Api {
 	private String baseUrl = "http://localhost:8080";
 	private String loginEndpoint = "/WebGoat/login";
 	private String sqlInjectionEndpoint = "/WebGoat/SqlInjection/attack8";
-	private static String jsessionId = "nLJ7iRd1p_qFiHJKvRyxP_ReuDilKkW1veEUN3tN";
+	private static String jsessionId = "QL8MKi4ytbAEYF9LJHeT69XdP1zn39dbpybjzq74";
 
 	@BeforeTest
 	public void setup() {

@@ -1,9 +1,0 @@
-tests\LoginApiTest.class
-Utils\ExtentReportListener.class
-Utils\Utilities.class
-tests\AnderoidAppium.class
-tests\BaseTestApi.class
-tests\APITest.class
-PageObject\HomePageNavigation.class
-tests\WebGoat8Api.class
-tests\WebGoatTest.class
